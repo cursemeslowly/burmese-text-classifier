@@ -46,7 +46,7 @@ classes = classes.filter(function(c, i, self) {
 console.log(documents.length + " documents");
 console.log(classes.length + " classes");
 // console.log(classes);
-console.log(words.length + " unique words ");
+console.log(words.length + " unique words (syllables)");
 // console.log(words);
 console.log('------');
 
@@ -233,7 +233,7 @@ function rand(rows, cols) {
     return result;
 }
 
-// Return 2D array with abs values
+// Return 2D array with 1 for positive and 0 for negative
 function binary_array(matrix) {
     var arr = matrix.tolist();
     var nx = arr.length;
